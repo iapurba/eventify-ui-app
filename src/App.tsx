@@ -1,15 +1,10 @@
-import React from 'react';
-import GlobalHeader from './layouts/GlobalHeader/GlobalHeader';
-import Disclaimer from './layouts/Disclaimer/Disclaimer';
-import { constants } from './utils/constants';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/routes';
 
 
-function App() {
+const App = () => {
   return (
-    <>
-      <GlobalHeader />
-      <Disclaimer message={constants.DISCLAIMER_MESSAGE} />
-    </>
+    <RouterProvider router={router}/>
   );
 }
 
