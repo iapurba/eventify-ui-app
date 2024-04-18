@@ -1,8 +1,10 @@
-import React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './routes/routes';
 
-function App() {
+
+const App = () => {
   return (
-    <>Welcome to Eventify</>
+    <RouterProvider router={router}/>
   );
 }
 
