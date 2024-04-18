@@ -1,8 +1,15 @@
 import React from 'react';
+import GlobalHeader from './layouts/GlobalHeader/GlobalHeader';
+import Disclaimer from './layouts/Disclaimer/Disclaimer';
+import { constants } from './utils/constants';
+
 
 function App() {
   return (
-    <>Welcome to Eventify</>
+    <>
+      <GlobalHeader />
+      <Disclaimer message={constants.DISCLAIMER_MESSAGE} />
+    </>
   );
 }
 
