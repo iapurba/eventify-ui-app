@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import RootLayout from "../layouts/RootLayout";
+import EventDiscoveryPage from "../pages/EventDiscovery.page";
 
 export const router = createBrowserRouter([
     {
@@ -7,7 +8,7 @@ export const router = createBrowserRouter([
         element: <RootLayout/>,
         children: [{
             path: '/all-events/:city',
-            element: null,
+            element: <EventDiscoveryPage/>,
         }],
     }
 ]);
