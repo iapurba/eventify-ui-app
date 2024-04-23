@@ -21,9 +21,10 @@ export const FilterButtonWrapper = styled(Button) <FilterMenuButtonProps>`
     )};
     &:hover {
         border-color: ${({ active }) => (
-        active ? '#C20000' : '1px solid rgb(153, 153, 153)'
-    )};
+            active ? '#C20000' : '1px solid rgb(153, 153, 153)'
+        )};
         background-color: ${({ active }) => (
-        active ? '#C20000' : 'transparent'
-    )};
-}`;
+            active ? '#C20000' : 'transparent'
+        )};
+    }
+`;

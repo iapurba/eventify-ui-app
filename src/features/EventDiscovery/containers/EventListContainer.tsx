@@ -5,6 +5,7 @@ import { eventMockData } from '../../../mock/event.mockdata';
 import { Event } from '../../../types/event.type';
 import EventFilterPanel from '../components/EventFilterPanel/EventFilterPanel';
 import { generateDistinctCategoryList } from './EventListContainer.helper';
+import { useNavigate } from 'react-router-dom';
 
 const EventListContainer: React.FC = () => {
     const events = eventMockData;
@@ -15,6 +16,8 @@ const EventListContainer: React.FC = () => {
         title: 'All Events',
         count: filteredEvents.length,
     });
+
+    const navigate = useNavigate();
 
     const handleFilterEvents = (timeIndex: number, genreIndex: number) => {
         let filteredEvents = [...events];
@@ -45,6 +48,10 @@ const EventListContainer: React.FC = () => {
         };
     };
 
+    const handleEventClick = (slug: string) => {
+        navigate(`/${slug}/event`)
+    };
+
     return (
         <>
             <EventFilterPanel
@@ -56,7 +63,7 @@ const EventListContainer: React.FC = () => {
             <Grid container spacing={4} pt={3}>
                 {filteredEvents.map((event: Event, index: number) => (
                     <Grid item xs={12} sm={4} md={4} key={index}>
-                        <div>
+                        <div onClick={()=> handleEventClick(event?.slug)}>
                             <PrimaryEventCard
                                 name={event.name}
                                 dateTimeStr={event.dateTimeString}
