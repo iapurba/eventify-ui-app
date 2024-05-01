@@ -3,6 +3,7 @@ import RootLayout from "../layouts/RootLayout";
 import EventDiscoveryPage from "../pages/EventDiscovery.page";
 import ErrorPage from "../pages/Error.page";
 import EventInsightPage from "../pages/EventInsight.page";
+import EventTicketsPage from "../pages/EventTickets.page";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
             {
                 path: '/:slug/event',
                 element: <EventInsightPage />,
+            },
+            {
+                path: 'event/:slug/buy/:eventId/tickets',
+                element: <EventTicketsPage />,
             },
             {
                 path: '*',

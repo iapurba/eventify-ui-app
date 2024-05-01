@@ -205,3 +205,65 @@ export const WalletIcon = () => {
     );
 };
 
+export const RemoveIcon = () => {
+    return (
+        <SvgIcon sx={{ maskType: 'alpha' }}>
+            <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="#FFFFFF"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask
+                    id="mask0_3557_2211"
+                    maskUnits="userSpaceOnUse"
+                    x="0" y="0"
+                    width="24"
+                    height="25"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.5 12.5C18.5 12.7761 18.2761 13 18 13L6.5 13C6.22386 13 6 12.7761 6 12.5C6 12.2239 6.22386 12 6.5 12L18 12C18.2761 12 18.5 12.2239 18.5 12.5Z"
+                        fill="#FFFFFF">
+                    </path>
+                </mask>
+                <g mask="url(#mask0_3557_2211)">
+                    <rect y="0.5" width="24" height="24" fill="#FCFCFD"></rect>
+                </g>
+            </svg>
+        </SvgIcon>
+    );
+};
+
+export const AddIcon = () => {
+    return (
+        <SvgIcon sx={{ maskType: 'alpha' }}>
+            <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="#FFFFFF"
+                xmlns="http://www.w3.org/2000/svg">
+                <mask
+                    id="mask0_3557_2218"
+                    maskUnits="userSpaceOnUse"
+                    x="0" y="0"
+                    width="24"
+                    height="25"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12.75 6.75C12.75 6.47386 12.5261 6.25 12.25 6.25C11.9739 6.25 11.75 6.47386 11.75 6.75V12H6.5C6.22386 12 6 12.2239 6 12.5C6 12.7761 6.22386 13 6.5 13H11.75V18.25C11.75 18.5261 11.9739 18.75 12.25 18.75C12.5261 18.75 12.75 18.5261 12.75 18.25V13H18C18.2761 13 18.5 12.7761 18.5 12.5C18.5 12.2239 18.2761 12 18 12H12.75V6.75Z"
+                        fill="#FFFFFF">
+                    </path>
+                </mask>
+                <g mask="url(#mask0_3557_2218)">
+                    <rect y="0.5" width="24" height="24" fill="#FCFCFD"></rect>
+                </g>
+            </svg>
+        </SvgIcon>
+    );
+};
+
