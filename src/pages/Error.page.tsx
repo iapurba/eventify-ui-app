@@ -1,6 +1,10 @@
-const ErrorPage = () => {
+import PageBuilder from "../common/PageBuilder/PageBuilder";
+
+const ErrorPage: React.FC = () => {
     return (
-        <>This is Error Page</>
+        <PageBuilder id="error-page">
+            This is Error Page
+        </PageBuilder>
     );
 };
 

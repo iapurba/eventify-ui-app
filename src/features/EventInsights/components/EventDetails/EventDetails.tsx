@@ -65,7 +65,7 @@ const EventDetails: React.FC<EventDetailsProps> = ({
                     </Typography>
                 </Box>
                 <PrimaryButton
-                    primary={false}
+                    layout='pink'
                     label='buy now'
                     onClick={onBuyClick}
                 />

@@ -1,11 +1,11 @@
-import { PageContainer } from "../common/PageBuilder/PageBuilder.styles";
+import PageBuilder from "../common/PageBuilder/PageBuilder";
 import EventListContainer from "../features/EventDiscovery/containers/EventListContainer";
 
-const EventDiscoveryPage = () => {
+const EventDiscoveryPage: React.FC = () => {
     return (
-        <PageContainer>
+        <PageBuilder id="event-discovery-page">
             <EventListContainer />
-        </PageContainer>
+        </PageBuilder>
     );
 }
 

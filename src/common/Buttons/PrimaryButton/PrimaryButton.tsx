@@ -1,26 +1,29 @@
 import { ReactNode } from "react";
-import { ButtonProps } from "@mui/material";
+import { ButtonProps, SxProps } from "@mui/material";
 import PrimaryButtonWrapper from "./PrimaryButton.styles";
 
 interface PrimaryButtonProps extends ButtonProps {
-    primary?: boolean;
+    layout: 'blue' | 'pink' | 'dark';
     size?: 'small' | 'medium' | 'large';
     label: string;
     children?: ReactNode;
     onClick?: any;
+    sx?: SxProps;
 }
 
 const PrimaryButton = ({
-    primary = true,
+    layout,
     children,
     label,
     onClick,
+    sx,
     ...props
 }: PrimaryButtonProps) => {
     return (
         <PrimaryButtonWrapper
-            className={primary ? 'primary' : 'secondary'}
+            layout={layout}
             onClick={onClick}
+            sx={sx}
             {...props}
         >{label}
         </PrimaryButtonWrapper>
